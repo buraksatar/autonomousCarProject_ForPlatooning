@@ -23,3 +23,10 @@ Ayrıca .bin uzantılı dosyalar seçilmeli, yükleme yapılması için
 Birincisi 3 tane Vcc bağlı kablonun ortasındaki.
 
 İkincisi Toprağa bağlı olan, GND ucu dışındaki uç
+
+02.08.2016 Gece--> 
+a- NodeMCU ile firmware atılabiliyor.
+
+b- ESP8266 LED aç kapa yapabiliyor.
+
+c- TCP üzerinden web server kurulacak!

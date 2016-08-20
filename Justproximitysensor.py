@@ -38,4 +38,6 @@ while a < 4 :
   
   a += 1
 
+  time.sleep(1)
+
 GPIO.cleanup()

@@ -57,8 +57,9 @@ while a < 4 :
   time.sleep(1)
 
   db = firebase.database()
-  db.child("autonomous")
+#  db.child("autonomous")
   data = {"number": distance}
-  db.child("autonomous").push(data)
+#  db.child("autonomous").push(data)
+  db.update(data)
 
 GPIO.cleanup()

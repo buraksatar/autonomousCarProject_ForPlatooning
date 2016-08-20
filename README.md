@@ -20,3 +20,9 @@ Biliniyor fakat tam olarak test edilmedi
 # Firebase to WEMOS ESP866
 
 Anlık alma var. Henüz arduinoda yapılmadı
+
+# Postman ile http request
+
+GET https://testautonomous.firebaseio.com/number.json yapılırsa,
+
+direk 'number' değeri elde ediliyor.

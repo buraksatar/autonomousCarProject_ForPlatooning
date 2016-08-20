@@ -32,7 +32,7 @@ time.sleep(1)
 
 a = 1
 
-while a < 4 :
+while a < 11 :
 
   GPIO.output(TRIG, True)
   time.sleep(0.00001)
@@ -54,7 +54,7 @@ while a < 4 :
   
   a += 1
 
-  time.sleep(1)
+#  time.sleep(1)
 
   db = firebase.database()
 #  db.child("autonomous")

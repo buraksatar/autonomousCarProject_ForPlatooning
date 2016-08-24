@@ -27,8 +27,6 @@ sleep 3
 sudo ifconfig wlan0 up
 sleep 3
 
-sudo python home/pi/Desktop/Denemeler/lcdPython/lcdPython.py &
+sudo python home/pi/Desktop/Receiver/lcdPython.py &
 
 exit 0
-
-

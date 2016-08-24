@@ -18,7 +18,7 @@ firebase = pyrebase.initialize_app(config)
 
 GPIO.setmode(GPIO.BCM)
 
-TRIG = 23 
+TRIG = 23
 ECHO = 24
 
 print "Distance Measurement In Progress"
@@ -32,7 +32,7 @@ time.sleep(1)
 
 a = 1
 
-while a < 11 :
+while a < 1000 :
 
   GPIO.output(TRIG, True)
   time.sleep(0.00001)
@@ -50,16 +50,22 @@ while a < 11 :
 
   distance = round(distance, 2)
 
-  print "Distance:",distance,"cm"
-  
+#  print "Distance:",distance,"cm"
+
+  if distance < 200:
+    mesafe = distance
+
   a += 1
 
-#  time.sleep(1)
+#  time.sleep(0.1)
 
   db = firebase.database()
 #  db.child("autonomous")
-  data = {"number": distance}
-#  db.child("autonomous").push(data)
+  data = {"number": mesafe}
+#  data = {"number": distance}
   db.update(data)
+#  db.child("autonomous").push(data)
+#  db.child("autonomous").update(data)
+#   db.child("autonomous").set(data)
 
 GPIO.cleanup()
